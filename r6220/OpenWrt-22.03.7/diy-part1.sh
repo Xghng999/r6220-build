@@ -15,7 +15,8 @@
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-sed -i "/helloworld/d" "feeds.conf.default"
-echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
+#sed -i "/helloworld/d" "feeds.conf.default"
+#echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
+sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #wget https://raw.githubusercontent.com/Bartixxx32/r6220-build/main/patchres.diff -O ./target/linux/ramips/patches-5.10/901-staging-mt7621-pci-delay-for-properly-detect.patch
